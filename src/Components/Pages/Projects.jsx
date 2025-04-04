@@ -45,8 +45,8 @@ const Projects = () => {
       id: '5',
       title: 'Portfolio',
       description: 'A React application that contains my Projects.',
-      githubLink: 'https://github.com/Parikshit-Kamate/Chat-Application',
-      liveDemoLink: 'https://parikshitkamatechatapplication.netlify.app/',
+      githubLink: 'https://github.com/Parikshit-Kamate/Portfolio',
+      liveDemoLink: 'https://parikshitkamateportfolio.netlify.app/',
       image: portfolio
     },
     {

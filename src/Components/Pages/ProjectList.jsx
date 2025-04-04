@@ -26,12 +26,12 @@ const ProjectList = () => {
     {
       id: '5',
       title: 'Chat Application',
-      link: 'https://parikshitkamatefitness.netlify.app/',
+      link: 'https://parikshitkamatechatapplication.netlify.app/',
     },
     {
       id: '6',
       title: 'Portfolio',
-      link: 'https://parikshitkamatefitness.netlify.app/',
+      link: 'https://parikshitkamateportfolio.netlify.app/',
     }
   ];
 
@@ -39,7 +39,7 @@ const ProjectList = () => {
     <div style={{ backgroundColor: '#0F172A', minHeight: '100vh', color: '#ffffff' }}>
       <div className="container pt-4">
         <div className="row">
-          
+
           <div className="col-md-6">
             {projects.slice(0, 3).map((project) => (
               <div key={project.id} className="mb-5 mt-5 p-3 rounded">
@@ -50,7 +50,7 @@ const ProjectList = () => {
               </div>
             ))}
           </div>
-          
+
           <div className="col-md-6">
             {projects.slice(3).map((project) => (
               <div key={project.id} className="mb-5 mt-5 p-3 rounded">
