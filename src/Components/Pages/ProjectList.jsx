@@ -6,7 +6,7 @@ const ProjectList = () => {
     {
       id: '1',
       title: 'Hospital Management System',
-      link: 'https://hospital-management-system-snowy-nu.vercel.app/',
+      link: 'https://hospital-management-project-pi.vercel.app/',
     },
     {
       id: '2',

@@ -22,7 +22,7 @@ const Projects = () => {
       title: 'Hospital Management System',
       description: 'A React application that manages hospital system process.',
       githubLink: 'https://github.com/Parikshit-Kamate/hospital_management_project',
-      liveDemoLink: 'https://hospital-management-system-snowy-nu.vercel.app/',
+      liveDemoLink: 'https://hospital-management-project-pi.vercel.app/',
       image: medical
     },
     {
