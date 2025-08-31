@@ -18,13 +18,16 @@ const Contact = () => {
       });
   };
 
+  // -------- Gmail compose: same tab, inbox behind, small compose (like your image) --------
+  // This opens an empty "New Message" box centered over the inbox.
+  const gmailCompose = 'https://mail.google.com/mail/u/0/#inbox?compose=new';
 
   const cardStyle = {
     background: 'rgba(255, 255, 255, 0.05)',
     borderRadius: '10px',
     boxShadow: '0 0 10px rgba(0, 255, 255, 0.3)',
     padding: '20px',
-    color: '#ffffff'
+    color: '#ffffff',
   };
 
   return (
@@ -34,31 +37,29 @@ const Contact = () => {
     >
       <div className="container">
         <div className="row g-5">
-
           <div className="col-lg-4">
-
+            {/* Email card */}
             <div className="card mb-4" style={cardStyle}>
               <div className="card-body">
                 <h5 className="card-title">Email</h5>
                 <p className="card-text">parikshitkamate002@gmail.com</p>
-                <a
-                  href="mailto:parikshitkamate002@gmail.com"
-                  className="btn btn-primary"
-                >
-                  Send a mail
+
+                {/* Opens Gmail in SAME TAB with small compose overlay */}
+                <a href={gmailCompose} className="btn btn-primary"
+                  target='_blank'
+                  rel="noopener noreferrer">
+                  Send a mail (Gmail)
                 </a>
               </div>
             </div>
 
-
+            {/* WhatsApp card */}
             <div className="card mt-5" style={cardStyle}>
               <div className="card-body">
                 <h5 className="card-title">WhatsApp</h5>
-                <p className="card-text">+91 9110656272</p>
+                <p className="card-text">+91 8073948903</p>
                 <a
-                  href="https://wa.me/9110656272"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="https://wa.me/918073948903"
                   className="btn btn-primary"
                 >
                   Send a message
@@ -67,11 +68,10 @@ const Contact = () => {
             </div>
           </div>
 
-
+          {/* Contact form */}
           <div className="col-lg-8">
             <div className="card" style={cardStyle}>
               <div className="card-body">
-
                 <form onSubmit={handleSubmit(postData)}>
                   <div className="mb-3">
                     <label htmlFor="name" className="form-label">
@@ -122,6 +122,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
+          {/* /Contact form */}
         </div>
       </div>
     </div>
