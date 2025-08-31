@@ -53,8 +53,8 @@ const Projects = () => {
       id: '6',
       title: 'Todo Application',
       description: 'A React application that manages list of tasks.',
-      githubLink: 'https://github.com/Parikshit-Kamate/Chat-Application',
-      liveDemoLink: 'https://parikshitkamatechatapplication.netlify.app/',
+      githubLink: 'https://github.com/Parikshit-Kamate/todoapp',
+      liveDemoLink: 'https://parikshittodoapp.netlify.app/',
       image: todo
     },
 
